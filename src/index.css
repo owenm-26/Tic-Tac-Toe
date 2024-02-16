@@ -68,7 +68,8 @@ body {
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 200px;
+  height: 200px;
 }
 
 .board-row:after {
