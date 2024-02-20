@@ -44,11 +44,10 @@ function Board({ turn, squares, onPlay }) {
 
   // Winning? Or playing
   const winner = calculateWinner(squares);
-  var status;
+  var status; //*derived state variable* because status changes every time calculateWinner() returns which works off of a useState var (squares)
 
   if (winner) {
     status = "Winner: " + winner + "!!!";
-  } else {
     status = turn + " is up.";
   }
 
