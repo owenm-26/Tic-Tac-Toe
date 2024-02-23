@@ -48,6 +48,7 @@ function Board({ turn, squares, onPlay }) {
 
   if (winner) {
     status = "Winner: " + winner + "!!!";
+  } else {
     status = turn + " is up.";
   }
 
